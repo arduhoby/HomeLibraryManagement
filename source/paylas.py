@@ -24,11 +24,7 @@ def send_email(from_email, password, subject, message, to_email):
     server.sendmail(from_email, to_email, msg.as_string())
     server.quit()
 
-# Kullanım
-# email_subject = 'Konu Başlığı'
-# email_message = 'E-posta içeriği...'
-# recipient_email = 'melihfidan@gmail.com'
-# send_email(email_subject, email_message, recipient_email)
+
 
 
 def send_whatsapp_message(phone_number, message, hours, minutes):
@@ -42,11 +38,7 @@ def send_whatsapp_message(phone_number, message, hours, minutes):
     except Exception as e:
         logging.error(fullzaman + f'Hata: {e}')
 
-# Kullanım
-# phone_number = '+905322865115'  # Alıcı telefon numarası
-# whatsapp_message = 'Merhaba, bu bir test mesajıdır.'
-# message_hours = datetime.datetime.now().hour #   Gönderim saati (24 saat formatında)
-# message_minutes = datetime.datetime.now().minute   # Gönderim dakikası
+
 
 # send_whatsapp_message(phone_number, whatsapp_message, message_hours, message_minutes)
 def encode_password(password):
